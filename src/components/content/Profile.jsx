@@ -1,5 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { LuCodeXml } from "react-icons/lu";
 import Navbar from "../utilities/Navbar";
 import { useTheme } from "../../context/ThemeContext.jsx";
 import TypewriterText from "../utilities/TypewriterText.jsx";
@@ -33,6 +34,7 @@ export default function Profile({ profile }) {
                 aria-label="GitHub (opens in a new tab)"
                 title={social.name}
               >
+                {social.name === "Code" && <LuCodeXml className="h-6 w-6" />}
                 {social.name === "GitHub" && <FaGithub className="h-6 w-6" />}
                 {social.name === "LinkedIn" && (
                   <FaLinkedin className="h-6 w-6" />
