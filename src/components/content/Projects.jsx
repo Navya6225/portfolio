@@ -5,7 +5,7 @@ import ContentCard from "../layout/ContentCard.jsx";
 
 export default function Projects({ projects, analyticsSource = "projects" }) {
   return (
-    <SectionWrapper id="projects" title="Projects">
+    <SectionWrapper id="sales highlights" title="Sales Highlights">
       <ol className="group/list">
         {projects.map((prj, index) => (
           <li key={index} className="mb-12">
