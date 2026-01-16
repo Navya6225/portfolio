@@ -15,13 +15,7 @@ export default function Projects({ projects, analyticsSource = "projects" }) {
               description={prj.description}
               tags={prj.technologies}
               analyticsSource={analyticsSource}
-            >
-              <ProjectImage
-                imageName={prj.image} // e.g., "course-card.png" from JSON
-                alt={prj.title}
-                className="sm:col-span-2 mb-6 w-full h-auto rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
-              />
-            </ContentCard>
+            />
           </li>
         ))}
       </ol>
